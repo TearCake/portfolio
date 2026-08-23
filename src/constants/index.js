@@ -15,15 +15,24 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  multimodal_ai,
+  audio_visualizer,
+  picassa,
+  deeplearning_ai,
+  udemy,
+  cdac,
 } from "../assets";
+
+export const personalInfo = {
+  name: "Aditya Vinayak Chavan",
+  role: "AI & Software Engineer",
+  email: "adityachavan1357@gmail.com",
+  phone: "+91 84240-45821",
+  location: "Dombivli, Mumbai, India",
+  github: "https://github.com/TearCake",
+  linkedin: "https://linkedin.com/in/aditya-chavan-500a59267",
+};
 
 export const navLinks = [
   {
@@ -31,8 +40,20 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "education",
+    title: "Education",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "certifications",
+    title: "Certifications",
   },
   {
     id: "contact",
@@ -42,32 +63,24 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "AI / ML Engineer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Full-Stack Developer",
+    icon: web,
+  },
+  {
+    title: "Cloud & MLOps",
     icon: creator,
+  },
+  {
+    title: "Flutter Mobile Developer",
+    icon: mobile,
   },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
   {
     name: "JavaScript",
     icon: javascript,
@@ -79,10 +92,6 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -105,66 +114,78 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    name: "figma",
+    icon: figma,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Flutter Developer Intern",
+    company_name: "DreamVentz (Remote, India)",
+    icon: mobile,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Jan 2026 - Apr 2026",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built and designed the initial Flutter UI prototype, including vendor listings, search, wishlist, cart, and booking workflows.",
+      "Integrated Supabase for PostgreSQL database operations and dynamic data fetching across vendors, venues, and user-specific app data.",
+      "Implemented custom package functionality that lets users choose services, vendors, and venues directly inside the app.",
+      "Collaborated using Git, writing clean, modular Dart code and stateful reactive components.",
+    ],
+  },
+];
+
+const education = [
+  {
+    title: "Bachelor of Technology in Computer Engineering (Honours in Next-Gen AI)",
+    institution_name: "Vidyalankar Institute of Technology (Mumbai, India)",
+    icon: backend,
+    iconBg: "#1d1836",
+    date: "2023 - 2027",
+    grade: "CGPA: 9.75 / 10.0 (Till Semester VI)",
+    points: [
+      "Outstanding academic distinction maintaining a 9.75 CGPA.",
+      "Specializing in Next-Gen Artificial Intelligence, Deep Learning architectures, Neural Networks, and NLP.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Higher Secondary Certificate (HSC) - 12th",
+    institution_name: "Model College (Dombivali, India)",
+    icon: creator,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "2021 - 2023",
+    grade: "Score: 84.00%",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed Higher Secondary Certificate examination in the Science stream.",
+      "Strong foundation in Mathematics, Physics, Chemistry, and Computer Science.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Secondary School Certificate (SSC) - 10th",
+    institution_name: "IES Chandrakant Patkar Vidyalaya (Dombivali, India)",
+    icon: web,
+    iconBg: "#1d1836",
+    date: "2021",
+    grade: "Score: 92.00%",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Graduated with Distinction scoring 92.00% in SSC Board Examination.",
+      "Recognized for strong academic performance in Mathematics and Science.",
     ],
   },
 ];
@@ -172,94 +193,106 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Comprehensive professional specialization covering neural networks, deep learning architectures, CNNs, RNNs, transformer models, and production PyTorch training.",
+    name: "PyTorch for Deep Learning Professional Certificate",
+    designation: "Certified Deep Learning Specialist",
+    company: "DeepLearning.AI",
+    image: deeplearning_ai,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Mastery of modern React (v18/19), Next.js App Router, custom hooks, Redux, full-stack SSR/SSG patterns, and performance optimization.",
+    name: "React - The Complete Guide (incl. Next.js)",
+    designation: "Certified Full-Stack Developer",
+    company: "Udemy",
+    image: reactjs,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Advanced relational and NoSQL database management, schema design, ACID transactions, complex query tuning, indexing, and MongoDB document modeling.",
+    name: "MySQL & MongoDB Certification",
+    designation: "Certified Database Associate",
+    company: "CDAC",
+    image: cdac,
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Multimodal Video Sentiment & Emotion Analysis",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Built a multimodal deep learning system predicting 3-class sentiment and 7-class emotion from video by fusing text, visual, and audio features using frozen BERT, 3D ResNet-18, and Mel-spectrogram 1D CNNs on the MELD dataset. Deployed end-to-end with AWS SageMaker, S3, and Next.js.",
     tags: [
       {
-        name: "react",
+        name: "pytorch",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "bert & resnet",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "aws-sagemaker",
         color: "pink-text-gradient",
       },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
+    ],
+    image: multimodal_ai,
+    source_code_link: "https://github.com/TearCake/video-sentiment-model.git",
+  },
+  {
+    name: "Audio Classifier & Visualizer",
+    description:
+      "Local-first audio classification and real-time visualization platform achieving 81.25% validation accuracy over 99 training steps. Provides inference pipelines delivering predictions, waveforms, spectrograms, and intermediate CNN feature-maps via FastAPI JSON endpoints and Next.js.",
+    tags: [
       {
-        name: "supabase",
+        name: "pytorch",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "fastapi",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "nextjs",
         color: "pink-text-gradient",
       },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: audio_visualizer,
+    source_code_link: "https://github.com/TearCake/audio-classifier.git",
+  },
+  {
+    name: "Picassa – Social App & Image Editor",
+    description:
+      "Full-stack social media application featuring image sharing and a custom layer-based image editor built with the HTML5 Canvas API. Implemented JWT authentication, Express REST APIs, ImageKit CDN storage, Zustand and TanStack Query state management.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs & express",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "canvas-api",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: picassa,
+    source_code_link: "https://github.com/TearCake/Picassa.git",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, education, testimonials, projects };

@@ -30,6 +30,14 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import multimodal_ai from "./multimodal_ai.jpg";
+import audio_visualizer from "./audio_visualizer.jpg";
+import picassa from "./picassa.jpg";
+
+import deeplearning_ai from "./deeplearning_ai.svg";
+import udemy from "./udemy.svg";
+import cdac from "./cdac.svg";
+
 export {
   logo,
   backend,
@@ -59,4 +67,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  multimodal_ai,
+  audio_visualizer,
+  picassa,
+  deeplearning_ai,
+  udemy,
+  cdac,
 };
