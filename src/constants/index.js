@@ -159,10 +159,6 @@ const education = [
     iconBg: "#1d1836",
     date: "2023 - 2027",
     grade: "CGPA: 9.75 / 10.0 (Till Semester VI)",
-    points: [
-      "Outstanding academic distinction maintaining a 9.75 CGPA.",
-      "Specializing in Next-Gen Artificial Intelligence, Deep Learning architectures, Neural Networks, and NLP.",
-    ],
   },
   {
     title: "Higher Secondary Certificate (HSC) - 12th",
@@ -171,10 +167,6 @@ const education = [
     iconBg: "#383E56",
     date: "2021 - 2023",
     grade: "Score: 84.00%",
-    points: [
-      "Completed Higher Secondary Certificate examination in the Science stream.",
-      "Strong foundation in Mathematics, Physics, Chemistry, and Computer Science.",
-    ],
   },
   {
     title: "Secondary School Certificate (SSC) - 10th",
@@ -183,10 +175,6 @@ const education = [
     iconBg: "#1d1836",
     date: "2021",
     grade: "Score: 92.00%",
-    points: [
-      "Graduated with Distinction scoring 92.00% in SSC Board Examination.",
-      "Recognized for strong academic performance in Mathematics and Science.",
-    ],
   },
 ];
 
@@ -198,6 +186,7 @@ const testimonials = [
     designation: "Certified Deep Learning Specialist",
     company: "DeepLearning.AI",
     image: deeplearning_ai,
+    link: "https://www.deeplearning.ai/certificates/ef5aab01-6140-4c54-81a1-5cf5836f111a",
   },
   {
     testimonial:
@@ -206,6 +195,7 @@ const testimonials = [
     designation: "Certified Full-Stack Developer",
     company: "Udemy",
     image: reactjs,
+    link: "https://www.udemy.com/certificate/UC-efa9fcc6-1edf-427a-89e6-2438e1fecd28/",
   },
   {
     testimonial:

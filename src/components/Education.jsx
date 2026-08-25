@@ -47,16 +47,18 @@ const EducationCard = ({ edu }) => {
         )}
       </div>
 
-      <ul className='mt-4 list-disc ml-5 space-y-2'>
-        {edu.points.map((point, index) => (
-          <li
-            key={`education-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
-          >
-            {point}
-          </li>
-        ))}
-      </ul>
+      {edu.points && edu.points.length > 0 && (
+        <ul className='mt-4 list-disc ml-5 space-y-2'>
+          {edu.points.map((point, index) => (
+            <li
+              key={`education-point-${index}`}
+              className='text-white-100 text-[14px] pl-1 tracking-wider'
+            >
+              {point}
+            </li>
+          ))}
+        </ul>
+      )}
     </VerticalTimelineElement>
   );
 };

@@ -13,6 +13,7 @@ const CertificationCard = ({
   designation,
   company,
   image,
+  link,
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
@@ -39,9 +40,30 @@ const CertificationCard = ({
         <p className='text-white font-semibold text-[15px]'>{company}</p>
         <p className='text-secondary text-[12px]'>{designation}</p>
       </div>
-      <span className='text-xs px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 font-medium'>
-        Verified
-      </span>
+      {link ? (
+        <a
+          href={link}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='text-xs px-3 py-1.5 rounded-full bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-300 hover:text-white border border-indigo-500/40 font-medium flex items-center gap-1.5 transition-all duration-200 cursor-pointer shadow-sm hover:scale-105'
+        >
+          Verify
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            className='w-3.5 h-3.5'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+            strokeWidth='2.2'
+          >
+            <path strokeLinecap='round' strokeLinejoin='round' d='M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25' />
+          </svg>
+        </a>
+      ) : (
+        <span className='text-xs px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 font-medium'>
+          Verified
+        </span>
+      )}
     </div>
   </motion.div>
 );
