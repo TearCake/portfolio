@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, Component } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -9,6 +9,32 @@ import {
 } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
+
+class CanvasErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error) {
+    console.warn("WebGL BallCanvas error caught by ErrorBoundary:", error);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className='w-full h-full rounded-full bg-tertiary/90 p-4 flex items-center justify-center border border-white/10 shadow-card'>
+          <img src={this.props.icon} alt='tech-icon' className='w-12 h-12 object-contain' />
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
@@ -39,18 +65,20 @@ const Ball = (props) => {
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas
-      frameloop='demand'
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
-        <Ball imgUrl={icon} />
-      </Suspense>
+    <CanvasErrorBoundary icon={icon}>
+      <Canvas
+        frameloop='demand'
+        dpr={[1, 2]}
+        gl={{ preserveDrawingBuffer: true }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls enableZoom={false} />
+          <Ball imgUrl={icon} />
+        </Suspense>
 
-      <Preload all />
-    </Canvas>
+        <Preload all />
+      </Canvas>
+    </CanvasErrorBoundary>
   );
 };
 
