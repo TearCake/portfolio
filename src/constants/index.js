@@ -48,6 +48,10 @@ export const navLinks = [
     title: "Education",
   },
   {
+    id: "skills",
+    title: "Skills",
+  },
+  {
     id: "projects",
     title: "Projects",
   },
@@ -80,60 +84,79 @@ const services = [
   },
 ];
 
-const technologies = [
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
+export const skillsCategories = [
+  { id: "all", label: "All Skills" },
+  { id: "ai", label: "AI / ML" },
+  { id: "backend", label: "Backend & Cloud" },
+  { id: "frontend", label: "Frontend & Mobile" },
+  { id: "database", label: "Databases & Tools" },
 ];
+
+export const skillsRow1 = [
+  { name: "PyTorch", category: "AI / ML", categoryKey: "ai", accent: "#EE4C2C" },
+  { name: "Python", category: "Language", categoryKey: "ai", accent: "#3776AB" },
+  { name: "FastAPI", category: "Backend", categoryKey: "backend", accent: "#009688" },
+  { name: "Hugging Face", category: "AI / ML", categoryKey: "ai", accent: "#FFD21E" },
+  { name: "Node.js", category: "Backend", categoryKey: "backend", accent: "#68A063" },
+  { name: "AWS SageMaker", category: "Cloud & AI", categoryKey: "ai", accent: "#FF9900" },
+  { name: "Scikit-learn", category: "AI / ML", categoryKey: "ai", accent: "#F7931E" },
+  { name: "Express.js", category: "Backend", categoryKey: "backend", accent: "#90CDF4" },
+  { name: "AWS S3", category: "Cloud", categoryKey: "backend", accent: "#E05243" },
+  { name: "SQL", category: "Database", categoryKey: "database", accent: "#00758F" },
+];
+
+export const skillsRow2 = [
+  { name: "React", category: "Frontend", categoryKey: "frontend", accent: "#61DAFB" },
+  { name: "Next.js", category: "Frontend", categoryKey: "frontend", accent: "#E2E8F0" },
+  { name: "Flutter", category: "Mobile", categoryKey: "frontend", accent: "#47C5FB" },
+  { name: "JavaScript", category: "Language", categoryKey: "frontend", accent: "#F7DF1E" },
+  { name: "Tailwind CSS", category: "Frontend", categoryKey: "frontend", accent: "#38B2AC" },
+  { name: "PostgreSQL", category: "Database", categoryKey: "database", accent: "#336791" },
+  { name: "MongoDB", category: "Database", categoryKey: "database", accent: "#47A248" },
+  { name: "Supabase", category: "BaaS & DB", categoryKey: "database", accent: "#3ECF8E" },
+  { name: "Dart", category: "Language", categoryKey: "frontend", accent: "#0175C2" },
+  { name: "Git", category: "DevOps & Tools", categoryKey: "database", accent: "#F05032" },
+  { name: "TanStack Query", category: "State & Data", categoryKey: "frontend", accent: "#FF4154" },
+  { name: "SQLite", category: "Database", categoryKey: "database", accent: "#00A8FF" },
+  { name: "HTML/CSS", category: "Frontend", categoryKey: "frontend", accent: "#E44D26" },
+];
+
+export const allCategorizedSkills = [
+  // AI / ML
+  { name: "PyTorch", category: "AI / ML", categoryKey: "ai", accent: "#EE4C2C", desc: "Deep Learning & Neural Networks" },
+  { name: "Python", category: "Language", categoryKey: "ai", accent: "#3776AB", desc: "Core AI & Scripting Language" },
+  { name: "Hugging Face", category: "AI / ML", categoryKey: "ai", accent: "#FFD21E", desc: "Transformers & Model Hub" },
+  { name: "Scikit-learn", category: "AI / ML", categoryKey: "ai", accent: "#F7931E", desc: "Classical ML Algorithms" },
+  { name: "AWS SageMaker", category: "Cloud & AI", categoryKey: "ai", accent: "#FF9900", desc: "ML Model Pipelines & Hosting" },
+
+  // Backend & Cloud
+  { name: "FastAPI", category: "Backend", categoryKey: "backend", accent: "#009688", desc: "High-Performance Python APIs" },
+  { name: "Node.js", category: "Backend", categoryKey: "backend", accent: "#68A063", desc: "Scalable Event-Driven Runtime" },
+  { name: "Express.js", category: "Backend", categoryKey: "backend", accent: "#90CDF4", desc: "RESTful Server Architecture" },
+  { name: "AWS SageMaker", category: "Cloud & AI", categoryKey: "backend", accent: "#FF9900", desc: "Cloud ML Infrastructure" },
+  { name: "AWS S3", category: "Cloud", categoryKey: "backend", accent: "#E05243", desc: "Cloud Object Storage & Buckets" },
+  { name: "SQL", category: "Language", categoryKey: "backend", accent: "#00758F", desc: "Complex Database Queries" },
+
+  // Frontend & Mobile
+  { name: "React", category: "Frontend", categoryKey: "frontend", accent: "#61DAFB", desc: "Component-Driven Web UI" },
+  { name: "Next.js", category: "Frontend", categoryKey: "frontend", accent: "#E2E8F0", desc: "Full-Stack React & App Router" },
+  { name: "Flutter", category: "Mobile", categoryKey: "frontend", accent: "#47C5FB", desc: "Cross-Platform iOS & Android" },
+  { name: "JavaScript", category: "Language", categoryKey: "frontend", accent: "#F7DF1E", desc: "Modern ES6+ Logic" },
+  { name: "Dart", category: "Language", categoryKey: "frontend", accent: "#0175C2", desc: "Object-Oriented Mobile Logic" },
+  { name: "Tailwind CSS", category: "Frontend", categoryKey: "frontend", accent: "#38B2AC", desc: "Modern Utility-First CSS" },
+  { name: "HTML/CSS", category: "Frontend", categoryKey: "frontend", accent: "#E44D26", desc: "Semantic Responsive Layouts" },
+  { name: "TanStack Query", category: "State & Data", categoryKey: "frontend", accent: "#FF4154", desc: "Async State & Query Cache" },
+
+  // Databases & Tools
+  { name: "PostgreSQL", category: "Database", categoryKey: "database", accent: "#336791", desc: "ACID Relational Database" },
+  { name: "MongoDB", category: "Database", categoryKey: "database", accent: "#47A248", desc: "Document-Based NoSQL" },
+  { name: "Supabase", category: "BaaS & DB", categoryKey: "database", accent: "#3ECF8E", desc: "Postgres BaaS & Real-time" },
+  { name: "SQLite", category: "Database", categoryKey: "database", accent: "#00A8FF", desc: "Lightweight Embedded DB" },
+  { name: "Git", category: "DevOps & Tools", categoryKey: "database", accent: "#F05032", desc: "Version Control & Git Workflows" },
+  { name: "AWS S3", category: "Cloud Storage", categoryKey: "database", accent: "#E05243", desc: "Media & Asset Storage" },
+];
+
+const technologies = [...skillsRow1, ...skillsRow2];
 
 const experiences = [
   {

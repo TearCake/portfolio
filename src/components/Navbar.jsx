@@ -49,7 +49,7 @@ const Navbar = () => {
           />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Aditya &nbsp;
-            <span className='sm:block hidden'> | AI & Software Engineer</span>
+            <span className='sm:block hidden'> Chavan</span>
           </p>
         </Link>
 
