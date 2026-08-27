@@ -26,6 +26,9 @@
       "url": "https://valvetui.com/r/{name}.json",
       "headers": {
         "Authorization": "Bearer ${VALVETUI_TOKEN}"
+      },
+      "params": {
+        "token": "${VALVETUI_TOKEN}"
       }
     }
   }

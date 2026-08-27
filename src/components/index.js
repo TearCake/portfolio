@@ -9,6 +9,7 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+import OrbitPreloader from "./valvetui/OrbitPreloader";
 
 export {
   Hero,
@@ -21,6 +22,7 @@ export {
   Feedbacks,
   Contact,
   CanvasLoader,
+  OrbitPreloader,
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
