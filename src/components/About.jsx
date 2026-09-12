@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
+import { services, personalInfo } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -49,6 +49,33 @@ const About = () => {
         I specialize in architecting multimodal ML systems, high-throughput backend APIs,
         and responsive digital experiences.
       </motion.p>
+
+      <div className='mt-7 flex flex-wrap gap-4 items-center'>
+        <a
+          href={personalInfo.resumeUrl}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='group relative inline-flex items-center gap-3 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#915EFF] to-[#6d30e3] text-white font-semibold text-[15px] sm:text-[16px] shadow-[0_0_25px_rgba(145,94,255,0.4)] hover:shadow-[0_0_35px_rgba(145,94,255,0.7)] transition-all duration-300 hover:scale-[1.03] active:scale-95 border border-white/15 cursor-pointer'
+        >
+          <svg
+            className='w-5 h-5 text-white transition-transform duration-300 group-hover:translate-y-0.5'
+            fill='none'
+            stroke='currentColor'
+            viewBox='0 0 24 24'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              strokeWidth={2}
+              d='M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'
+            />
+          </svg>
+          <span>Download Resume / CV</span>
+          <span className='text-xs opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300'>
+            ↗
+          </span>
+        </a>
+      </div>
 
       <div className='mt-12 sm:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-7'>
         {services.map((service, index) => (

@@ -32,6 +32,7 @@ export const personalInfo = {
   location: "Dombivli, Mumbai, India",
   github: "https://github.com/TearCake",
   linkedin: "https://linkedin.com/in/aditya-chavan-500a59267",
+  resumeUrl: "https://drive.google.com/file/d/1xOrtEFtynYt2MEzxV8pFPzC7Lnp3ooPI/view?usp=sharing",
 };
 
 export const navLinks = [
@@ -96,6 +97,7 @@ export const skillsRow1 = [
   { name: "PyTorch", category: "AI / ML", categoryKey: "ai", accent: "#EE4C2C" },
   { name: "Python", category: "Language", categoryKey: "ai", accent: "#3776AB" },
   { name: "FastAPI", category: "Backend", categoryKey: "backend", accent: "#009688" },
+  { name: "Docker", category: "DevOps", categoryKey: "backend", accent: "#2496ED" },
   { name: "Hugging Face", category: "AI / ML", categoryKey: "ai", accent: "#FFD21E" },
   { name: "Node.js", category: "Backend", categoryKey: "backend", accent: "#68A063" },
   { name: "AWS SageMaker", category: "Cloud & AI", categoryKey: "ai", accent: "#FF9900" },
@@ -131,6 +133,7 @@ export const allCategorizedSkills = [
 
   // Backend & Cloud
   { name: "FastAPI", category: "Backend", categoryKey: "backend", accent: "#009688", desc: "High-Performance Python APIs" },
+  { name: "Docker", category: "DevOps & Cloud", categoryKey: "backend", accent: "#2496ED", desc: "Containerization & Microservices" },
   { name: "Node.js", category: "Backend", categoryKey: "backend", accent: "#68A063", desc: "Scalable Event-Driven Runtime" },
   { name: "Express.js", category: "Backend", categoryKey: "backend", accent: "#90CDF4", desc: "RESTful Server Architecture" },
   { name: "AWS SageMaker", category: "Cloud & AI", categoryKey: "backend", accent: "#FF9900", desc: "Cloud ML Infrastructure" },
@@ -148,6 +151,7 @@ export const allCategorizedSkills = [
   { name: "TanStack Query", category: "State & Data", categoryKey: "frontend", accent: "#FF4154", desc: "Async State & Query Cache" },
 
   // Databases & Tools
+  { name: "Docker", category: "DevOps & Tools", categoryKey: "database", accent: "#2496ED", desc: "Containerization & App Isolation" },
   { name: "PostgreSQL", category: "Database", categoryKey: "database", accent: "#336791", desc: "ACID Relational Database" },
   { name: "MongoDB", category: "Database", categoryKey: "database", accent: "#47A248", desc: "Document-Based NoSQL" },
   { name: "Supabase", category: "BaaS & DB", categoryKey: "database", accent: "#3ECF8E", desc: "Postgres BaaS & Real-time" },
